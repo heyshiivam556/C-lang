@@ -25,13 +25,13 @@ int main(){
     printf("no. of terms(n) : ");
     scanf("%d",&n);
 
-    int answer = 0;
+    float answer = 0;
     //for loop iterates n times
     for (int i = 0; i < n; i++){
       // printf("factorial of %d is %d \n",i, factorial(i));
-        answer += (1/factorial(i))*exponential(x,i);
+        answer += ((float)1/factorial(i))*exponential(x,i);
     }
-    printf("%d",answer);
+    printf("%f",answer);
     
 
 }
